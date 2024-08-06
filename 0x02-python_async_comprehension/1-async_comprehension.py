@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Module documentation"""
-import asyncio
-import random
+""" Module documentation """
 from typing import List
+
 async_generator = __import__("0-async_generator").async_generator
 
 
 async def async_comprehension() -> List[float]:
-    """Coroutine that collects 10 random numbers using an async comprehension over async_generator"""
-    return[i async for i in async_generator()]
+    """Func doc"""
+    return [random async for random in async_generator()]
